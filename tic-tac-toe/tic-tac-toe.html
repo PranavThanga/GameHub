@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tic-tac-toe.css" />
+    </head>
+    <body>
+
+    <h1>Tic-Tac-Toe</h1>
+
+    <div id="name-inputs">
+    <input type="text" id="name-x" placeholder="Player X name" maxlength="12"/>
+    <button id="start-btn">Start Game</button>
+    <input type="text" id="name-o" placeholder="Player O name" maxlength="12"/>
+    </div>
+
+    <div id="scoreboard">
+    <div class="score-card">
+        <span id="label-x">Player X</span>
+        <span id="score-x">0</span>
+    </div>
+    <div class="score-card">
+        <span id="label-o">Player O</span>
+        <span id="score-o">0</span>
+    </div>
+    </div>
+
+    <div id="status">Enter names to begin</div>
+
+    <div id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <button id="reset">Restart</button>
+
+    <script src="tic-tac-toe.js"></script>
+    </body>
+</html>
