@@ -1,0 +1,50 @@
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    position: relative;        /* anchor for the overlay */
+    width: 50%;
+    height: 20%;
+    border-radius: 12px;
+    overflow: hidden;          /* clips the overlay to the card shape */
+    cursor: pointer;
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover img {
+    transform: scale(1.05);    /* subtle zoom on hover */
+}
+
+.game-card .overlay {
+    position: absolute;
+    inset: 0;                  /* fills the whole card */
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;                /* hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.game-card:hover .overlay {
+    opacity: 1;                /* revealed on hover */
+}
+
+.overlay span {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
