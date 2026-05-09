@@ -2,7 +2,7 @@
   {
     "id": "tic-tac-toe",
     "name": "Tic-Tac-Toe",
-    "thumbnail": "tic-tac-toe/thumbnail.svg",
+    "thumbnail": "images/tic-tac-toe.svg",
     "url": "tic-tac-toe/tic-tac-toe.html"
   }
 ]

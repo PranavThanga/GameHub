@@ -8,11 +8,13 @@ body {
 h1 {
   font-size: 2rem;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 p {
   color: #a0a0c0;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .game-grid {
@@ -64,4 +66,12 @@ p {
     font-weight: bold;
     text-align: center;
     padding: 8px;
+}
+
+#stars-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;       /* sits behind all page content */
+  pointer-events: none; /* clicks pass straight through to the page */
 }

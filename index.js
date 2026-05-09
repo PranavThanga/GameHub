@@ -22,3 +22,5 @@ fetch('games.json')
     document.getElementById('game-grid').innerHTML = '<p>Could not load games.</p>';
     console.error('Failed to load games.json:', err);
   });
+
+  
