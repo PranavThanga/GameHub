@@ -25,17 +25,17 @@ p {
 }
 
 .game-card {
-    position: relative;        /* anchor for the overlay */
-    width: 50%;
-    height: 20%;
+    position: relative;
+    width: 200px;
+    height: 200px;
     border-radius: 12px;
-    overflow: hidden;          /* clips the overlay to the card shape */
+    overflow: hidden;
     cursor: pointer;
 }
 
 .game-card img {
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 150px;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -74,4 +74,11 @@ p {
   left: 0;
   z-index: -1;       /* sits behind all page content */
   pointer-events: none; /* clicks pass straight through to the page */
+}
+
+@media (max-width: 480px) {
+    .game-card {
+        width: 150px;
+        height: 150px;
+    }
 }
