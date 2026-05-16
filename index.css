@@ -26,17 +26,19 @@ p {
 
 .game-card {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 400;
+    height: 400px;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;              /* add this */
+    align-items: center;        /* add this */
+    justify-content: center;    /* add this */
 }
 
 .game-card img {
-    width: 50px;
-    height: 150px;
-    object-fit: cover;
+    width: auto;                /* let the SVG size itself naturally */
+    height: 100%;
     display: block;
     transition: transform 0.3s ease;
 }
